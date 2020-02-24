@@ -1,3 +1,11 @@
+# Sadik's react-redux Template
+This is a template useful for cretaing react-redux applications with a SASS integration.
+
+## Service Worker
+[Docs for service workers link](https://developers.google.com/web/fundamentals/primers/service-workers)
+
+If you are not making a app that needs to be accessible offline or not a PWA feel free to remove servcieworker.js
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -25,42 +33,26 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Modular Front-end 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This application's React application is built using a modular system where related pieces of Frontend functionality are grouped into "modules" 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+These currently reside under the "/src/modules" directory.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+For our examples we will refer to a fictional module named "users"
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Deciding whether to create a module or not?
 
-## Learn More
+As a rule of thumb - if your functionality requires specific state, then it should be a module.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Module anatomy
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Modules should contain: 
 
-### Code Splitting
+As a minimum:
+- A base module - as an index, this should be named after the module itself. eg. users.js. This file acts as the public interface of your module, and should export anything that other modules are likely to require from your module.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Optionally:
+- React components.
+- reducers - any state transformation functions your module requires to handle it's available actions.
+- actions - any action types or action creators that the module will use or expose for other modules to use.
