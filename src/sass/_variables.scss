@@ -1,0 +1,64 @@
+// Body
+$body-bg: #f8f8f8;
+
+// Typography
+$font-family-sans-serif: 'Open Sans', Helvetica, Arial, sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6em;
+$font-emphasis: #1A669B;
+$font-color-base: #222;
+$font-color-body: #848484;
+$font-color-sub: #b3b3b3;
+$font-color-light: #ffffff;
+
+// colors
+$color-brand: #1A669B;
+$color-brand-lighter: #1e78b7;
+
+$color-left-hand-nav: #124069;
+$color-background-main: #F5F5F5;
+$color-top-bar: #FFFFFF;
+
+$color-inactive-product: #ffffff4d;
+$color-active-product: #ffffff;
+
+$color-critical-alerts: #CC0000;
+$color-warning-alerts: #EDBC00;
+
+// Sensor Themes
+$tilt-sensor-theme: #009B72;
+$plp-sensor-theme: #6761A8;
+$disto-sensor-theme: #F26430;
+$bre-sensor-theme: #009DDC;
+$elb-sensor-theme: #2A2D34;
+
+// Default colors
+$color-heaviest: #161925;
+$color-heavier: #333333;
+$color-middle: #636363;
+$color-middle-light: #cacaca;
+$color-light: #F5F5F5;
+$color-lighter: #EBEBEB;
+$color-lightest: #ffffff;
+$color-warning: #FFA723;
+$font-color-base: #333333;
+$font-color-body: #333333;
+
+// Spacing
+$spacing-unit: 12px;
+
+// breakpoints
+$min-app-width: 900px;
+$small-screen-break: 1036px;
+
+// Main Bar expanded and contracted
+$mainBarWidth: 240px;
+$mainBarWidth-contracted: 60px;
+
+$topBarHeight: 60px;
+
+// Border Radius
+$border-radius: 5px;
+
+// Animation timing
+$screen-resize-transition: 150ms linear

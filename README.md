@@ -1,5 +1,5 @@
-# Sadik's react-redux Template
-This is a template useful for cretaing react-redux applications with a SASS integration.
+# React-Redux Template
+Template for a react-redux app using react-scripts
 
 ## Service Worker
 [Docs for service workers link](https://developers.google.com/web/fundamentals/primers/service-workers)
